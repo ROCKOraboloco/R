@@ -1,0 +1,210 @@
+/* 
+========== Table of Content ============
+-> BASIC STYLE
+-> HEADER	
+-> MENU 
+-> ABOUT US
+-> PROJECTS
+-> PLANETS
+-> GIRL
+-> FOOTER
+-> RESPONSIVE STYLE
+=========================================
+*/
+
+/*--------------------*/
+/*     BASIC STYLE    */
+/*--------------------*/
+
+html {
+	overflow-x:hidden;
+}
+body,h1,h2,h3,h4,h5,h6{
+	font-family: 'Inconsolata', monospace !important;
+}
+::-webkit-scrollbar{
+	display: none;
+}
+
+/*--------------------*/
+/*       HEADER       */
+/*--------------------*/
+
+#header {
+	background-image: url("img/matrix.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+/*--------------------*/
+/*        MENU        */
+/*--------------------*/
+
+.menu {
+	position: fixed;
+	width: 100%;
+}
+
+/*--------------------*/
+/*      ABOUT US      */
+/*--------------------*/
+
+.aboutUs {
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+}
+
+.aboutUsTxt{
+	margin-left: 200px !important;
+	margin-right: 100px !important;
+}
+
+.aboutUs img {
+	width: 50%;
+}
+
+/*--------------------*/
+/*      PROJECTS      */
+/*--------------------*/
+
+.project {
+	display: none;
+}
+ 
+.close-project {
+	width: 30px;
+	height: 30px;
+}
+
+/*--------------------*/
+/*     QUESTIONS      */
+/*--------------------*/
+
+.space-question {
+	width: 70% !important;
+	margin: auto;
+}
+
+/*--------------------*/
+/*       PLANETS      */
+/*--------------------*/
+
+#planets {
+	background-image: url("img/estrellas.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+/*--------------------*/
+/*        GIRLS       */
+/*--------------------*/
+
+#girls {
+	background-image: url("img/tuyyo.jpeg");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	padding-top: 10rem !important;
+	padding-bottom: 10rem !important;
+}
+
+/*--------------------*/
+/*        GALERY      */
+/*--------------------*/
+
+#galery {
+	background-image: url("img/matrix.png");
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+}
+
+.photo-gallery {
+	display: flex;
+}
+
+.w3-third {
+	margin-top: 20px;
+}
+
+/*--------------------*/
+/*       FOOTER       */
+/*--------------------*/
+
+footer a{
+	text-decoration: none;
+}
+
+/*--------------------*/
+/*  RESPONSIVE STYLE  */
+/*--------------------*/
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 600px) {	
+
+	/*--------------------*/
+	/*        MENU        */
+	/*--------------------*/
+
+	#menu-btn {
+		visibility: collapse;
+		display: contents;
+	}
+	#aerlogo {
+		padding: 10px !important;
+		font-size: x-large;
+	}
+	#aermenu {
+		padding: 10px !important;
+	}
+	#aermenu i {
+		line-height: inherit;
+	}
+
+	/*--------------------*/
+	/*      ABOUT US      */
+	/*--------------------*/
+
+	.aboutUs {
+		display: block;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.aboutUsTxt{
+		text-align: center;
+		margin: 0 10px 30px 10px !important;
+	}
+	
+	.aboutUs img {
+		width: 70%;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		margin: auto;
+	}
+
+	/*--------------------*/
+	/*        GALERY      */
+	/*--------------------*/
+
+	.photo-gallery {
+		display: block;
+	}
+	
+}

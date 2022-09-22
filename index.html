@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="AER">
+	<meta name="description" content="Proyecto de aprendizaje exponencial."> <!-- ! -->
+	<meta name="Copyright" content="AER Full Stack Web Developer">
+	<meta name="robots" content="noindex, nofollow" />
+	<meta http-equiv="cache-control" content="no-cache">
+	<title>AER</title>
+	<link rel="shortcut icon" type="image/icon" href="img/AER.png" />
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Roboto+Mono:wght@300&display=swap">
+</head>
+
+<body>
+	<!-- Start Header -->
+	<!-- Start menu  -->
+	<div class="menu">
+		<div class="w3-bar w3-black w3-card w3-left-align w3-large">
+			<a id="aermenu"
+				class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black"
+				onclick="btnMenu()"><i id="iconMenu" class="material-icons">menu</i></a>
+			<a href="#" id="aerlogo" class="w3-bar-item w3-button w3-padding-medium w3-hover-white">AER</a>
+			<a href="#questions" class="w3-bar-item w3-button w3-padding-medium w3-hover-white w3-right"
+				id="menu-btn">Preguntas</a>
+			<a href="#projects" class="w3-bar-item w3-button w3-padding-medium w3-hover-white w3-right"
+				id="menu-btn">Proyectos</a>
+			<a href="#aboutUs" class="w3-bar-item w3-button w3-padding-medium w3-hover-white w3-right"
+				id="menu-btn">Quienes somos</a>
+		</div>
+		<!-- Menu on small screens -->
+		<div id="menu" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-medium">
+			<a href="aboutUs" class="w3-bar-item w3-button w3-padding-medium w3-hover-black">Quienes somos</a>
+			<a href="#projects" class="w3-bar-item w3-button w3-padding-medium w3-hover-black">ProjectProyectos</a>
+			<a href="#questions" class="w3-bar-item w3-button w3-padding-medium w3-hover-black">Preguntas</a>
+		</div>
+	</div>
+	<!-- And menu -->
+	<!-- Star presentation -->
+	<header id="header" class="w3-container w3-center w3-text-white w3-padding-64">
+		<h1 class="w3-margin w3-jumbo">AER</h1>
+		<p class="w3-xlarge">Aprende creando</p>
+	</header>
+	<!-- End presentation -->
+	<!-- End Header -->
+	<!-- Start main content -->
+	<main>
+		<!-- Start about us -->
+		<div id="aboutUs" class="w3-row-padding w3-padding-64 w3-container aboutUs">
+			<div class="w3-content aboutUsTxt">
+				<h1 class="w3-text-black">Quienes somos</h1>
+				<p class="w3-text-black">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+					aliquip ex ea commodo consequat. Excepteur sint
+					occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+					consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+					enim ad minim veniam, quis nostrud exercitation ullamco
+					laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+			</div>
+			<div>
+				<img src="./img/AER.png" alt="Logo AER" class="w3-circle">
+			</div>
+		</div>
+		<!-- End about us -->
+		<!-- Start projects -->
+		<div id="project" class="w3-row-padding w3-padding-64 w3-container w3-center w3-black">
+			<h2 class="w3-xxlarge">Proyectos</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est vel repellat et!</p>
+			<div class="w3-container">
+				<button class="w3-button w3-hover-white w3-round w3-xlarge"
+					onclick="document.getElementById('project1').style.display='block'">Planetas</button>
+				<div id="project1" class="w3-modal w3-animate-opacity">
+					<div class="w3-modal-content w3-card-4">
+						<span
+							class="w3-button w3-hover-white w3-display-topright w3-xxlarge material-icons w3-round w3-black"
+							onclick="document.getElementById('project1').style.display='none'">clear</span>
+						<div class="">
+							<!-- Start planets  -->
+							<div class="w3-row-padding w3-padding-64 w3-container w3-text-white" id="planets">
+								<div class="w3-content">
+									<h2>Diferencia de peso en planetas</h2>
+									<p>
+										En este ejercicio descubriremos tu peso corporal según el planeta que elijas,
+										nuestro peso está estipulado según la fuerza gravitacional de nuestro planeta
+										pero que pasaría si viviéramos en otro cuerpo celeste dentro del sistema solar,
+										por supuesto el peso será diferente debido a que cada planeta tiene una fuerza
+										de gravedad distinta.
+									</p>
+								</div>
+								<form class="w3-row-padding w3-padding-64 w3-center">
+									<div class="w3-center">
+										<input type="text" class="" placeholder="Proporciona tu peso" required="">
+									</div>
+									<div class="w3-center">
+										<select class="">
+											<option value="0">Marte</option>
+											<option value="1">Mercurio</option>
+											<option value="2">Venus</option>
+											<option value="3">Jupiter</option>
+											<option value="4">Saturno</option>
+											<option value="5">Urano</option>
+											<option value="6">Neptuno</option>
+										</select>
+									</div>
+									<div class="w3-center">
+										<button type="submit" class="">CALCULAR</button>
+									</div>
+								</form>
+							</div>
+							<!-- End planets -->
+						</div>
+					</div>
+				</div>
+				<button class="w3-button w3-round w3-hover-white w3-xlarge"
+					onclick="document.getElementById('project2').style.display='block'">Girls</button>
+				<div id="project2" class="w3-modal w3-animate-opacity">
+					<div class="w3-modal-content w3-card-4">
+						<span
+							class="w3-button w3-hover-white w3-display-topright w3-xxlarge material-icons w3-round w3-black"
+							onclick="document.getElementById('project2').style.display='none'">clear</span>
+						<div class="">
+							<!-- Start -->
+							<div class="w3-row-padding w3-padding-64 w3-container w3-text-white w3-center" id="girls">
+								<div class="">
+									<h2 class="">¿Quieres ser mi novia?</h2>
+								</div>
+								<div class="w3-row-padding w3-container w3-center">
+									<input class="w3-btn w3-round w3-hover-white w3-xlarge" type="button"
+										onclick="yes()" id="btnSi" value="Si">
+									<input class="w3-btn w3-round w3-hover-white w3-xlarge" type="button"
+										onclick="onmouseover=moveBtn()" id="btnNo" value="No">
+								</div>
+							</div>
+							<!-- End  -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- End projects -->
+		<!-- Start questions -->
+		<div id="questions" class="w3-row-padding w3-padding-64 w3-container w3-center">
+			<h1>Preguntas</h1>
+			<button onclick="according('question1')" class="w3-btn w3-block space-question">lorem</button>
+			<div id="question1" class="w3-container w3-hide">
+				<h3>lorem</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias quis unde porro. Aut aliquid dolor
+					aperiam, facilis tempore, iste obcaecati est adipisci eveniet molestiae veniam eligendi inventore
+					doloribus temporibus modi!</p>
+			</div>
+			<button onclick="according('question2')" class="w3-btn w3-block space-question">lorem</button>
+			<div id="question2" class="w3-container w3-hide">
+				<h3>lorem</h3>
+				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo ab saepe culpa eos,
+					incidunt cupiditate ratione, animi quibusdam aperiam ducimus beatae facere soluta quo necessitatibus
+					a, obcaecati odit vitae.</p>
+			</div>
+		</div>
+		<!-- End questions -->
+		<!-- Star galery -->
+		<div id="galery" class="w3-row-padding w3-padding-64 w3-container w3-center w3-black">
+			<div class="w3-container w3-black">
+				<h1>Galeria</h1>
+			</div>
+			<div class="w3-row-padding w3-margin-top w3-center photo-gallery">
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="./img/avatar.png" style="width:70%">
+						<div class="w3-container w3-black w3-round">
+							<h5>Luis Rodriguez</h5>
+						</div>
+					</div>
+				</div>
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="./img/avatar.png" style="width:70%">
+						<div class="w3-container w3-black w3-round">
+							<h5>Jesus Escorcia</h5>
+						</div>
+					</div>
+				</div>
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="./img/avatar.png" style="width:70%">
+						<div class="w3-container w3-black w3-round">
+							<h5>Keshia Lambis</h5>
+						</div>
+					</div>
+				</div>
+				<div class="w3-third">
+					<div class="w3-card">
+						<img src="./img/avatar.png" style="width:70%">
+						<div class="w3-container w3-black w3-round">
+							<h5>Luis Ballesta</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End galery -->
+	</main>
+	<!-- End main content -->
+	<!-- Start footer -->
+	<footer class="w3-row-padding w3-padding-32 w3-container w3-center">
+		<div>
+			<p>&copy; Copyright <a href="#" class="w3-hover-text-green"> AER</a>. All right reserved.</p>
+		</div>
+		<div>
+			<p>Powered by <a href="https://www.w3schools.com/w3css" target="_blank"
+					class="w3-hover-text-green w">w3.css</a></p>
+		</div>
+	</footer>
+	<!-- End footer -->
+</body>
+
+</html>
